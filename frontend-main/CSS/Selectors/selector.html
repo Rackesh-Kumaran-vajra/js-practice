@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS selectors</title>
+
+
+  <style>
+    *{
+      background-color: black;
+    }
+
+    p{
+      color: aqua;
+    }
+
+    .box{
+      background-color: burlywood;
+    }
+
+    #main-title{
+      color: blue;
+      font-style: italic;
+    }
+
+    .container p {
+      color: chartreuse;
+      font-size: 24px;
+    }
+
+    div > p{
+      color: brown;
+      font-size: xx-small;
+    }
+
+    input[type="text"]{
+      background-color: goldenrod;
+    }
+
+    input[type="password"]{
+      background-color:cornflowerblue;
+    }
+
+    a:hover{
+      color: red;
+    }
+
+    p::first-letter{
+      color: darkviolet;
+      font-size: 30px;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <!--Universal Selectors-->
+  <!--using *-->
+
+
+  <!--Type Selector-->
+  <p>This paragraph is styled using the type selector</p>
+
+  <!--Class Selector   >-->
+  <div class="box">
+    This is a class selectors </code> <br>
+    The border and background come from the CSS class.
+
+  </div>
+
+  <div class="box">
+    <p>This is my second div </p>
+
+  </div>
+
+
+  <!-- ID selector -->
+   <h1 id="main-title">CSS Selectors Explained</h1>
+
+   <hr>
+
+
+   <p id="sub-desc"> This paragraph is the exmple for the ID selector</p>
+
+
+   <!-- Descendant Selector -->
+
+   <div class="container">
+    <p>This paragraph is inside a container, styled with the descendant selector</p>
+   </div>
+
+   <!-- child Selector -->
+
+   <div>
+    <p>This is the first paragraph chill </p>
+    <p>This is the second paragraph child2 </p>
+    <section>
+      <p>This is not direct child of div </p>
+    </section>
+    <p>This is also child</p>
+   </div>
+
+
+   <!-- Attribute Selector -->
+    <p>Attribute selector</p>
+    <input type="text" placeholder="Name (styled)">
+    <input type="password" placeholder="Password (not styled)">
+
+
+   <!-- Pseudo-class Selector -->
+    <p><strong>Pseudo-class selector</strong> example: <a href="#">Hover over this link </a>to change its color</p> 
+
+   <!-- Pseudo-element Selector -->
+    <p>This paragraph uses pseudo-element selector : the first letter is styled using. </p>
+
+
+
+
+
+</body>
+</html>

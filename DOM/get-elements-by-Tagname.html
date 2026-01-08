@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements by Tag name</title>
+</head>
+<body>
+    <p>This is the first paragraph</p>
+    <p>This is the second paragraph</p>
+    <button>This is the button 1</button>
+    <button>This is the button 2 </button>
+
+    <script>
+       const paragraphElements = document.getElementsByTagName('p');
+
+       for(let i=0;i<paragraphElements.length;i++){
+        const element = paragraphElements[i];
+        element.textContent = "New text for paragraph " + (i + 1);
+
+       }
+
+
+       const buttonElements = document.getElementsByTagName('button');
+       for(let i=0;i<buttonElements.length;i++){
+        const element = buttonElements[i];
+        element.textcontent = "new text for button " + (i + 1);
+       }
+
+
+    </script>
+    
+</body>
+</html>

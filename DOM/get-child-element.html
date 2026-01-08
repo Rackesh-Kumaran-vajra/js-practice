@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getchildelement</title>
+</head>
+<body>
+    <div id="parentElement">
+        <p>child 1</p>
+        <p>child 2</p>
+        <p>child 3</p>
+    </div>
+
+
+    <script>
+       const parentElement = document.getElementById('parentElement');
+       const childElements = parentElement.children;
+
+      for(i=0;i<childElements.length;i++){
+        const element = childElements[i];
+        element.style.fontWeight = 'bold';
+
+      }
+    </script>
+</body>
+</html>

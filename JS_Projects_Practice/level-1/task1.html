@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button clcik counter </title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button id="add">+</button>
+    <span id="count">0</span>
+    <button id="sub">-</button>
+    <button id="reset">reset</button>
+
+
+    <script>
+        count = 0;
+
+        const counter = document.getElementById('count');
+        const add = document.getElementById('add');
+        const sub = document.getElementById('sub');
+
+       
+        
+        add.addEventListener('click',function(){
+            count ++;
+            counter.textContent = count 
+        })
+
+        sub.addEventListener('click',function(){
+            count --;
+            counter.textContent = count 
+        })
+
+        reset.addEventListener('click',function(){
+            count = 0;
+            counter.textContent = count;
+        })
+    </script>
+</body>
+</html>

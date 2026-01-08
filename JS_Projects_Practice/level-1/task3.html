@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input validation</title>
+</head>
+<body>
+    <h3>Form validation</h3>
+
+    <input type="text" id="input-txt" placeholder="enter here">
+    <button id="submitbtn">submit</button>
+
+    <p id="message"></p>
+
+
+    <script>
+        const Input_name = document.getElementById('input-txt');
+        const submit_button = document.getElementById('submitbtn');
+        const message = document.getElementById('message');
+
+        submit_button.addEventListener('click',()=>{
+            const name = Input_name.value.trim();
+
+            if(name === ''){
+                message.innerText = 'input field is empty';
+                message.style.color = 'red';        
+            }
+            else{
+                message.innerText = 'form submit';
+                message.style.color = 'green';
+                Input_name.value = '';
+            }
+        });
+
+    </script>
+</body>
+</html>

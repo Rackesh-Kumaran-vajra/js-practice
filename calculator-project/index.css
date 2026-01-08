@@ -1,0 +1,279 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background-color: rgb(7, 123, 224);
+
+}
+
+
+
+.card{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: aliceblue;
+    width:420px;
+    padding:10px;
+}
+
+
+.typo{
+    padding: 20px;
+    /* display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0px; */
+
+}
+
+.input-box{
+    padding: 30px;
+    width:100%;
+    height:70px;
+    font-size:32px;
+    text-align: end;
+    border-radius: 8px;
+}
+
+
+.buttons-for-symbols,
+.button-for-numbers,
+.button-for-others {
+    padding: 15px;
+    display: grid;
+    gap: 10px;
+}
+
+.buttons-for-symbols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.button-for-numbers {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.button-for-others {
+    grid-template-columns: 160px;
+}
+
+.plus-icons{
+    background-color: rgb(139, 208, 236);
+    border: 1px solid black;
+    padding:  5px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+.minus-icon{
+    background-color: rgb(139, 208, 236);
+    border: 1px solid black;
+    padding:  5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mutiply-icon{
+    background-color: rgb(139, 208, 236);
+    border: 1px solid black;
+    padding: 5px ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.division-icon{
+    background-color: rgb(139, 208, 236);
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+     border-radius: 10px;
+     cursor: pointer;
+}
+
+.zero{
+     background-color: rgb(139, 208, 236);
+     border: 1px solid black;
+     padding: 5px 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 30px;
+      border-radius: 10px;
+      cursor: pointer;
+}
+
+.one{
+     background-color: rgb(139, 208, 236);
+     border: 1px solid black;
+     padding: 5px 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 30px;
+     border-radius: 10px;
+     cursor: pointer;
+
+
+}
+
+.two{
+     background-color: rgb(139, 208, 236);
+     border: 1px solid black;
+     padding: 5px 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 30px;
+      border-radius: 10px;
+      cursor: pointer;
+
+}
+
+.three{
+     background-color: rgb(139, 208, 236);
+     display: inline-block;
+     border: 1px solid black;
+     padding: 5px 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 30px;
+     border-radius: 10px;
+     cursor: pointer;
+
+}
+
+.four{
+     background-color: rgb(139, 208, 236);
+     border: 1px solid black;
+     padding: 5px 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 30px;
+      border-radius: 10px;
+      cursor: pointer;
+
+}
+
+.five{
+     background-color: rgb(139, 208, 236);
+     border: 1px solid black;
+     padding: 5px 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 27px;
+      border-radius: 10px;
+      cursor: pointer;
+
+}
+
+.six{
+     background-color: rgb(139, 208, 236);
+     border: 1px solid black;
+     padding: 5px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 27px;
+      border-radius: 10px;
+      cursor: pointer;
+
+}
+
+.seven{
+     background-color: rgb(139, 208, 236);
+     border: 1px solid black;
+     padding: 5px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 27px;
+      border-radius: 10px;
+      cursor: pointer;
+
+}
+
+.eight{
+     background-color: rgb(139, 208, 236);
+     border: 1px solid black;
+     padding: 5px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 27px;
+     border-radius: 10px;
+     cursor: pointer;
+
+}
+
+.nine{
+     background-color: rgb(139, 208, 236);
+     border: 1px solid black;
+     padding: 5px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 27px;
+     border-radius: 10px;
+     cursor: pointer;
+
+}
+
+.dot{
+     background-color: rgb(139, 208, 236);
+     display: inline-block;
+     border: 1px solid black;
+     padding: 5px 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 30px;
+     border-radius: 10px;
+     cursor: pointer;
+}
+
+.cancel-btn{
+
+     background-color: rgb(232, 52, 52);
+     display: inline-block;
+     border: 1px solid black;
+     padding: 5px 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 30px;
+     color: white;
+     border-radius: 10px;
+     cursor: pointer;
+
+}
+
+.equal-to{
+
+     background-color: rgb(139, 236, 157);
+     display: inline-block;
+     border: 1px solid black;
+     padding: 5px 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size: 20px;
+     color: white;
+     border-radius: 10px;
+     cursor: pointer;
+
+}
+
+
+
+
+

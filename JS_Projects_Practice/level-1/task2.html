@@ -1,0 +1,31 @@
+<!--Show / Hide Password-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide password</title>
+</head>
+<body>
+    <input type="password" id="password">
+    <button id="toggle">show</button>
+
+
+    <script>
+        const Password = document.getElementById('password');
+        const Toggle = document.getElementById('toggle');
+
+        Toggle.addEventListener('click',()=>{
+            if(Password.type === 'password'){
+               Password.type = 'text';
+               Toggle.innerText = 'Hide' 
+            }
+            else{
+                Password.type = 'password';
+                Toggle.innerText = 'Show';
+            }
+        });
+    </script>
+</body>
+</html>

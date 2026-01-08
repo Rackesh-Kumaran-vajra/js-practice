@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <button id="sj">Irukku</button>
+    
+</body>
+<script>
+
+    // mouse events:
+    let btn = document.getElementById('sj');
+
+    btn.addEventListener('click',(event)=>{
+        btn.textContent = 'ana illa';
+        console.log('clicked');
+    });
+
+    btn.addEventListener('mouseover',(event)=>{
+        btn.textContent = 'oruvella irukumo';
+        console.log('hover');
+    });
+
+    btn.addEventListener('mouseout',(event)=>{
+        btn.textContent = 'Irukku';
+        console.log('hover');
+    });
+
+
+
+
+</script>
+</html>

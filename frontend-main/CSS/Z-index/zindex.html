@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-index</title>
+
+  <style>
+    .box{
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      opacity: 0.9;
+      text-align: center;
+      line-height: 150px;
+      font-weight: bold;
+      color: white;
+      background: gray;
+      border: 2px solid black;
+    }
+
+    .red{
+      background: red;
+      z-index: 1; /* behind */
+    }
+
+    .blue{
+      background: blue;
+      top: 100px;
+      left: 100px;
+      z-index: 2; /* on top of red */
+    }
+
+    .green{
+      background: green;
+      top: 150px;
+      left: 150px;
+      z-index: 3; /* on top of both */
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="box red">Z-index 1</div>
+  <div class="box blue">Z-index 2</div>
+  <div class="box green">Z-index 3</div>
+</body>
+</html>

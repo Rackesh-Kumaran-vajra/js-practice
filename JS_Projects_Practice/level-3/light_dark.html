@@ -1,0 +1,51 @@
+<!-- Light and dark theme switcher -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <style>
+
+        body.dark{
+            background-color: #121212;
+            color: #ffffff;
+        }
+        body.light{
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        
+     </style>
+</head>
+<body class="dark">
+
+    <div class="container mt-5 text-center">
+        <h3>Theme Switcher</h3>
+        <button class="btn btn-dark" id="themeBtn">light Mode</button>
+
+    </div>
+    
+
+    <script>
+     const themeBtn = document.getElementById('themeBtn');
+
+     themeBtn.addEventListener('click',()=>{
+        document.body.classList.toggle('light');
+
+        if(document.body.classList.contains('light')){
+            themeBtn.innerText = 'Dark Mode'
+
+        }
+
+        else{
+            themeBtn.innerText = 'Light Mode';
+        }
+     })
+    </script>
+</body>
+</html>

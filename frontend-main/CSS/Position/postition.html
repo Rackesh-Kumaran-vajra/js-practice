@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+
+  <style>
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+      height: 2000px;
+    }
+
+    .box{
+      width: 200px;
+      height: 100px;
+      padding:10px;
+      color: white;
+      text-align: center;
+      line-height: 80px;
+      margin-bottom: 30px;
+    }
+
+    /* 1. static */
+    .static{
+      position: static;
+      background: #6c5ce7;
+    }
+
+    /* 2. relative */
+    .relative {
+      position: relative;
+      left: 50px;
+      top: 20px;
+      
+      
+      background: #00b894;
+    }
+
+    /* 3. absolute */
+    .absolute-container{
+      position: relative;  /* parent positioned */
+      height: 200px;
+      background: #dfe6e9;
+      margin-bottom: 30px;
+    }
+    .absolute{
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      background: #e17055;
+    }
+
+    /* 4 . fixed */
+    .fixed{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0984e3;
+    }
+
+    /* 5. sticky */
+    .sticky{
+
+      position: sticky;
+      top: 0px;
+      background: #d63031;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Position</h1>
+
+  <div class="box static">Static (default)</div>
+  <div class="box relative">relative</div>
+
+  <div class="absolute-container">
+    <div class="box absolute">Absolute (inside container)</div>
+  </div>
+
+  <div class="box sticky">Sticky (sticks on scroll)</div>
+
+  <div class="box fixed">Fixed (always bottom-right)</div>
+
+  
+</body>
+</html>
