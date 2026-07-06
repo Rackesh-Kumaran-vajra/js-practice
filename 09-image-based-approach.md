@@ -8,16 +8,16 @@
 
 The website stacks **transparent PNG layers** in the browser. The client supplies separate images for door shape, glass, hardware, and frame. **Door colour is applied in code** (tint/texture overlay) — so you do **not** need 140 separate door JPEGs.
 
-```
-Layer stack (bottom → top):
+### Layer stack (bottom → top)
 
-  [5] Hardware PNG     ← swap when handle/knocker changes
-  [4] Glass PNG        ← swap when glass design changes
-  [3] Door colour      ← applied in code (tint or texture overlay)
-  [2] Door base PNG    ← swap when door style changes (shape/moulding)
-  [1] Frame PNG        ← swap when frame colour changes
-  [0] Background JPG   ← room / studio scene
-```
+| Order | Layer | Format | When it changes |
+|-------|-------|--------|-----------------|
+| 0 | Background | JPG | Room / studio scene (fixed) |
+| 1 | Frame | PNG | Frame colour changes |
+| 2 | Door base | PNG | Door style changes (shape/moulding) |
+| 3 | Door colour | Code | Colour tint or woodgrain texture overlay |
+| 4 | Glass | PNG | Glass design changes |
+| 5 | Hardware | PNG | Handle / knocker changes |
 
 **Pros:** Fewer images from client (~65–95 vs ~240–300)  
 **Cons:** More development time (Canvas/CSS compositor, colour accuracy, layer alignment)
@@ -75,17 +75,17 @@ The door base PNG is exported in **neutral grey** so tints look correct.
 
 ## 4. File Naming Convention
 
-```
-layers/door-base/{style}.png          →  layers/door-base/vogue.png
-layers/textures/{colour}.png          →  layers/textures/irish-oak.png
-layers/glass/{glass-id}.png           →  layers/glass/shade.png
-layers/hardware/{type}-{finish}.png   →  layers/hardware/lever-lever-chrome.png
-layers/frames/{colour}.png            →  layers/frames/white.png
-backgrounds/scene-01.jpg
-swatches/{colour-id}.png
-thumbnails/styles/{style}.jpg
-logo.png
-```
+| Asset type | Naming pattern | Example |
+|------------|----------------|---------|
+| Door base | `layers/door-base/{style}.png` | `layers/door-base/vogue.png` |
+| Woodgrain texture | `layers/textures/{colour}.png` | `layers/textures/irish-oak.png` |
+| Glass overlay | `layers/glass/{glass-id}.png` | `layers/glass/shade.png` |
+| Hardware overlay | `layers/hardware/{type}-{finish}.png` | `layers/hardware/lever-lever-chrome.png` |
+| Frame overlay | `layers/frames/{colour}.png` | `layers/frames/white.png` |
+| Background scene | `backgrounds/scene-01.jpg` | `backgrounds/scene-01.jpg` |
+| Colour swatch | `swatches/{colour-id}.png` | `swatches/anthracite-grey.png` |
+| Style thumbnail | `thumbnails/styles/{style}.jpg` | `thumbnails/styles/vogue.jpg` |
+| Logo | `logo.png` | `logo.png` |
 
 ---
 
