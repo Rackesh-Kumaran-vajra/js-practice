@@ -1,13 +1,10 @@
-# 10. Strategy A — Layered PNG Configurator
+# 3D Door Designer — Project Documentation
 
-[← Back to Index](index.md) | [Image-Based Overview](09-image-based-approach.md)
-
-**Selected approach:** Layered PNG — fewer client images, more development work  
-**Reference:** [rockdoor.com/3d-door-designer](https://www.rockdoor.com/3d-door-designer)
+**Version:** 1.0 | **Date:** July 2026
 
 ---
 
-## 1. What Is Strategy A?
+## 1. Project Overview
 
 The website stacks **transparent PNG layers** in the browser. The client supplies separate images for door shape, glass, hardware, and frame. **Door colour is applied in code** (tint/texture overlay) — so you do **not** need 140 separate door JPEGs.
 
@@ -279,41 +276,10 @@ The app generates all combinations by swapping layers — no extra images per co
 
 ---
 
-### Master timeline
-
-```
-Week   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15
-       ├───┤
-       Layer spec → client delivers pilot PNGs (~22)
-           ├───────────────┤
-           PILOT: Canvas compositor + testing (3–4 weeks)
-                           ├─────────────────────────┤
-                           Client delivers full set (~95 PNGs)
-                           Full MVP development (6–8 weeks)
-                                                     ├─────────┤
-                                                     Backend
-                                                               ├────┤
-                                                               Launch
-```
-
-| Milestone | Week |
-|-----------|------|
-| Layer spec sent to client | Week 1 |
-| Pilot PNGs received | Week 1–2 |
-| **Pilot demo ready** | **Week 4** |
-| Pilot sign-off | Week 4–5 |
-| Full PNG set received | Week 5–7 |
-| **MVP beta** | **Week 11–12** |
-| Backend live | Week 13 |
-| **GO LIVE** | **Week 14–15** |
-
----
-
 ## 11. Client Delivery Checklist
 
 ```
-STRATEGY A — LAYERED PNG DOOR DESIGNER
-Client Image Deliverables
+3D DOOR DESIGNER — CLIENT IMAGE DELIVERABLES
 
 IMPORTANT
 □ All PNG layers must be the SAME canvas size (e.g. 2000×4000 px)
@@ -356,8 +322,8 @@ FORMAT
 
 ## 12. Summary for Client Proposal
 
-| Question | Answer (Strategy A) |
-|----------|---------------------|
+| Question | Answer |
+|----------|--------|
 | Approach | Layered transparent PNG + code colour tint |
 | Pilot images | **~22 images** |
 | MVP images | **~95 images** |
@@ -373,4 +339,4 @@ FORMAT
 
 ---
 
-*Strategy A documentation v1.0 — July 2026*
+*3D Door Designer documentation v1.0 — July 2026*
